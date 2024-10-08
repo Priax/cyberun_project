@@ -1,5 +1,8 @@
 {
-    "countries": [
-      { "country": "Inconnu", "percentage": 100}
-    ]
+  "name": "Vincent",
+  "countries": [
+    { "country": "France", "percentage": 50 },
+    { "country": "Belgique", "percentage": 30 },
+    { "country": "Allemagne", "percentage": 20 }
+  ]
 }

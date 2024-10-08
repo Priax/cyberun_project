@@ -1,27 +1,15 @@
 {
   "type": "object",
   "properties": {
-    "name": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Veuillez entrer votre nom"
-    },
+    "name": { "type": "string", "minLength": 2 },
     "countries": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "country": {
+          "countries_list": {
             "type": "string",
-            "description": "Choisissez un pays",
-            "enum": [
-              "France",
-              "Belgique",
-              "Allemagne",
-              "Burkina Faso",
-              "Panama",
-              "Inconnu"
-            ]
+            "enum": ["France", "Allemagne", "Belgique", "Inconnu"]
           },
           "percentage": {
             "type": "number",
@@ -29,9 +17,10 @@
             "maximum": 100
           }
         },
-        "required": ["country", "percentage"]
+        "required": ["countries_list", "percentage"]
       }
     }
   },
-  "required": ["name", "countries"]
+  "required": ["name", "countries"],
+  "additionalProperties": false
 }

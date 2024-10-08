@@ -12,7 +12,9 @@
     "@jsonforms/core": "^3.4.0",
     "@jsonforms/material-renderers": "^3.4.0",
     "@jsonforms/react": "^3.4.0",
-    "next": "14.2.13",
+    "ajv": "^8.17.1",
+    "ajv-errors": "^3.0.0",
+    "next": "^14.2.14",
     "react": "^18",
     "react-dom": "^18"
   },

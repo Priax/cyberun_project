@@ -1,16 +1,30 @@
 {
   "type": "VerticalLayout",
-  "elements": [
-    {
-      "type": "Control",
-      "scope": "#/properties/name"
-    },
-    {
-      "type": "Control",
-      "scope": "#/properties/countries",
-      "options": {
-        "autocomplete": true
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/name"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/countries",
+        "options": {
+          "detail": {
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/countries_list"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/percentage",
+                "options": {
+                  "readOnly": true
+                }
+              }
+            ]
+          }
+        }
       }
-    }
-  ]
+    ]
 }
